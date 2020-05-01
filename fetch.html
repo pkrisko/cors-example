@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CORS Example</title>
+  </head>
+  <body>
+    <script>
+        const url =  "https://<api-id>.execute-api.us-east-1.amazonaws.com/dev/corsExample"
+        fetch(url)
+        .then(response => response.json())
+        .then(data => alert(data));
+    </script>
+  </body>
+</html>
